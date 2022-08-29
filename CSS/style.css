@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* latihan satu */
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(197, 197, 197);
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex
+}
+
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3 ;
+}
+
+/* latihan dua */
+
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.layanan {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.layanan.satu {
+    background-color: white;
+}
+
+.layanan.dua {
+    background-color: white;
+}
+
+.layanan.tiga {
+    background-color: white;
+}
+
+/* latihan 3 gallery */
+
+.container-tiga {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+    margin: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+/* akhir latihan 3 */
+
+/* latihan 4 card harga */
+
+.container-empat {
+    width: 800px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.card {
+    border: 1px black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px ;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.12);
+}
+/* responsive */
+@media(min-width: 600px){
+
+    .container-dua {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .layanan {
+        width: 30%;
+    }
+    
+    .thumbnail {
+        width: 25%;
+    }
+
+
+}
